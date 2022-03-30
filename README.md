@@ -1,4 +1,4 @@
-# delivering_app
+# A Flutter App
 
 A new Flutter project.
 
