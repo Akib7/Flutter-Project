@@ -1,11 +1,11 @@
 import 'package:delivering_app/config/constants.dart';
-import 'package:delivering_app/screens/LoginForm.dart';
+import 'package:delivering_app/screens/login/LoginForm.dart';
 import 'package:delivering_app/screens/MyHomePage.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../Review Cart/home/drawer.dart';
+import '../home/drawer.dart';
 
 class MyProfile extends StatefulWidget {
   MyProfile({Key? key}) : super(key: key);

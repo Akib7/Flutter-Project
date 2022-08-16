@@ -1,8 +1,7 @@
-import 'package:delivering_app/screens/MyHomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'screens/LoginForm.dart';
+import 'screens/login/LoginForm.dart';
 
 void main() {
   runApp(MyApp());

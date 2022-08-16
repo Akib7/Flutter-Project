@@ -4,7 +4,7 @@ import 'package:delivering_app/config/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'MyHomePage.dart';
+import '../MyHomePage.dart';
 
 class EmailFieldValidator {
   static String? validate(String? value) {
