@@ -1,3 +1,4 @@
+import 'package:delivering_app/My%20Profile/myProfile.dart';
 import 'package:delivering_app/config/constants.dart';
 
 import 'package:flutter/material.dart';
@@ -95,7 +96,9 @@ class _DrawerState extends State<DrawerData> {
                 listTile(
                     icon: Icons.person_outline,
                     title: 'My Profile',
-                    onTap: () {}),
+                    onTap: () {
+                      Get.to(() => MyProfile());
+                    }),
                 listTile(
                     icon: Icons.star_outline, title: 'Ratings and Reviews'),
                 listTile(icon: Icons.favorite_outline, title: 'Wishlist'),

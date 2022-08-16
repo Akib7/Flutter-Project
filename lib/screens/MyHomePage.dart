@@ -5,6 +5,7 @@ import 'package:delivering_app/screens/Item_pictures.dart';
 import 'package:flutter/material.dart';
 
 import '../Review Cart/home/drawer.dart';
+import '../config/constants.dart';
 import 'Restaurants.dart';
 import 'dropDown.dart';
 
@@ -19,6 +20,34 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: primaryColour,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 8,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.search),
+                ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image(
+                    height: 40,
+                    width: 40,
+                    fit: BoxFit.cover,
+                    image: AssetImage('images/cr7.jpg'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
       drawer: DrawerData(),
       backgroundColor: Colors.grey[100],
       body: Center(
@@ -27,29 +56,28 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             // crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 24),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.menu),
-                      color: Colors.yellow[700],
-                      iconSize: 40,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Image(
-                        height: 40,
-                        width: 40,
-                        fit: BoxFit.cover,
-                        image: AssetImage('images/cr7.jpg'),
-                      ),
-                    ),
-                  ],
-                ),
+              // Padding(
+              //   padding:
+              //       const EdgeInsets.symmetric(horizontal: 8, vertical: 24),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.end,
+              //     children: [
+
+              //       ClipRRect(
+              //         borderRadius: BorderRadius.circular(20),
+              //         child: Image(
+              //           height: 40,
+              //           width: 40,
+              //           fit: BoxFit.cover,
+              //           image: AssetImage('images/cr7.jpg'),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
+              SizedBox(
+                width: 8,
+                height: 24,
               ),
               dropDown(),
               getTabBar(),
