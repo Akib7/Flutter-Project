@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../Review Cart/review_cart.dart';
 
 class FoodImage extends StatelessWidget {
   final String imageName;
@@ -41,7 +44,9 @@ class FoodImage extends StatelessWidget {
                       ),
                       FlatButton(
                         minWidth: 3,
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.to(() => ReviewCart());
+                        },
                         child: Icon(
                           Icons.add_shopping_cart,
                           color: Colors.white.withOpacity(.7),

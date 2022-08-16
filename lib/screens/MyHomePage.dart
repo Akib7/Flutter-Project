@@ -4,13 +4,12 @@ import 'package:delivering_app/screens/getTabBar.dart';
 import 'package:delivering_app/screens/Item_pictures.dart';
 import 'package:flutter/material.dart';
 
+import '../Review Cart/home/drawer.dart';
 import 'Restaurants.dart';
 import 'dropDown.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  MyHomePage({Key? key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -20,6 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerData(),
       backgroundColor: Colors.grey[100],
       body: Center(
         child: SingleChildScrollView(
